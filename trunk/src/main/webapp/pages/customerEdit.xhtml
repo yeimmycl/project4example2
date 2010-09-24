@@ -5,17 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:a4j="http://richfaces.org/a4j"
-	xmlns:rich="http://richfaces.org/rich">
+	xmlns:h="http://java.sun.com/jsf/html">
 
 <ui:composition template="/pages/template/template.xhtml">
 <ui:define name="body">
- 
-
- 
+  
 	<h:form >
-		<h:panelGrid columns="3" rules="all" title="Customer" >
+		<h:panelGrid columns="3" title="Customer">
 			<f:facet name="header">
             	<h:outputText value="Customer"/>
          	</f:facet>
@@ -52,7 +48,7 @@
 			<h:message for="zip" />
 			
 			<f:facet name="footer"> 
-				<h:commandButton action="#{customer.save}"  value="save"/>
+				<h:commandButton action="#{customer.save}"  value="save"  />
 			</f:facet>
 		</h:panelGrid>
 
