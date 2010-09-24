@@ -8,14 +8,22 @@
 <body>
 
 
-<rich:panelMenu>
+<rich:panelMenu width="120px">
 <rich:panelMenuGroup label="Customer">
-	<rich:panelMenuItem label="Create" action="customerEdit.jsf" />
-	<rich:panelMenuItem label="List"  action="customerList.jsf" />
 	<rich:panelMenuItem >
-			 <h:outputLink value="customerEdit.jsf" >link_1</h:outputLink>
+			 <h:outputLink value="customerEdit.jsf" >Create</h:outputLink>
+	</rich:panelMenuItem>
+	<rich:panelMenuItem >
+			 <h:outputLink value="customerList.jsf" >List</h:outputLink>
 	</rich:panelMenuItem> 
-
+</rich:panelMenuGroup>
+<rich:panelMenuGroup label="Order">
+	<rich:panelMenuItem >
+			 <h:outputLink value="welcome.jsf" >Create</h:outputLink>
+	</rich:panelMenuItem>
+	<rich:panelMenuItem >
+			 <h:outputLink value="welcome.jsf" >List</h:outputLink>
+	</rich:panelMenuItem> 
 </rich:panelMenuGroup>
 </rich:panelMenu>
 
