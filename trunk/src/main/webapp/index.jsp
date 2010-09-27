@@ -7,7 +7,5 @@
 <a href="pages/welcome.jsf" >Basic JSF</a> 
 <br></br>
 <a href="pagesRf/welcome.jsf" >RichFaces JSF</a> 
-<br></br>
-<a href="pages/greeting.jsf" >Greeting</a>
 </body>
 </html>
