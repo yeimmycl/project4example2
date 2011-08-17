@@ -2,8 +2,11 @@ package com.mycompany.bean;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-import com.mycompany.dao.ICustomerDao;
+
+import com.mycompany.dao.CustomerDao;
 import com.mycompany.entity.Customer;
 import com.mycompany.entity.CustomerOrder;
 
@@ -11,9 +14,11 @@ import com.mycompany.entity.CustomerOrder;
  * @author abdelkafi_s
  *
  */
+@Component
 public class CustomerController {
 	
-		private ICustomerDao customerDao;
+		@Qualifier
+		private CustomerDao customerDao;
 	
 	    private String customerId;
 
@@ -53,12 +58,12 @@ public class CustomerController {
 
 
 
-		public ICustomerDao getCustomerDao() {
+		public CustomerDao getCustomerDao() {
 			return customerDao;
 		}
 
 
-		public void setCustomerDao(ICustomerDao customerDao) {
+		public void setCustomerDao(CustomerDao customerDao) {
 			this.customerDao = customerDao;
 		}
 
