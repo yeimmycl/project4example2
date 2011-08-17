@@ -30,8 +30,7 @@ public class Customer  {
     }
 
     @Id
-    @GenericGenerator(name = "generator", strategy = "increment")
-    @GeneratedValue(generator = "generator")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "customer_id", nullable = false)
     private Long customerId;
 
